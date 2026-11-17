@@ -1,4 +1,4 @@
-const discountPercent = 10; // Change this to your sale discount
+const discountPercent = 10; // Change this to sale discount
 
 document.querySelectorAll(".device-price").forEach((priceElement) => {
   const match = priceElement.textContent.match(/\$([\d,]+)/);
