@@ -2138,3 +2138,19 @@ h1 span,
   font-weight: bold;
   margin-left: 8px;
 }
+
+.original-price {
+  color: red;
+  margin-right: 0.4em;
+}
+
+.sale-price {
+  color: red;
+  font-weight: bold;
+}
+
+.device-price .sale-price {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
