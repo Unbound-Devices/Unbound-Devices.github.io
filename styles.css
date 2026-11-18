@@ -2154,3 +2154,10 @@ h1 span,
   font-size: 1.4rem;
   font-weight: 700;
 }
+
+.feature-illustration {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.15rem;
+}

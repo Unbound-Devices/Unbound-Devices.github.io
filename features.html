@@ -3,24 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore Unbound Devices phone features and its GrapheneOS foundation.">
+  <meta name="description" content="Explore Unbound Devices phone features and GrapheneOS security protections.">
   <title>Features — Unbound Devices</title>
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="feature-graphics.css">
 </head>
 
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="UnboundOS home">
+    <a class="brand" href="index.html" aria-label="Unbound Devices home">
       <img class="brand-logo" src="logo.jpeg" alt="">
       <span>Unbound Devices</span>
     </a>
 
     <nav class="main-nav" aria-label="Main navigation">
-      <a href="features.html">Features</a>
+      <a href="features.html" aria-current="page">Features</a>
       <a href="about.html">About</a>
       <a href="get-started.html">Get Started</a>
       <a href="support.html">Contact Support</a>
@@ -35,46 +36,103 @@
       <p class="eyebrow"><span class="status-dot"></span> The Unbound Devices experience</p>
       <h1>More control.<br><span>Less compromise.</span></h1>
       <p>
-        Unbound Devices phones are powered by GrapheneOS, a secure and private mobile OS.
+        Choose a phone built around GrapheneOS: Android compatibility combined
+        with useful controls and security protections.
+      </p>
     </section>
 
     <section class="features-detail" aria-labelledby="feature-heading">
       <div class="features-heading">
         <p class="eyebrow">Made for everyday use</p>
-        <h2 id="feature-heading">A phone that puts you in control.</h2>
+        <h2 id="feature-heading">Security features you can actually use.</h2>
       </div>
 
       <div class="features-grid">
         <article class="feature-card">
-          <div class="feature-icon" aria-hidden="true">◈</div>
-          <h3>Privacy and security</h3>
+          <div class="feature-illustration" aria-hidden="true">📱🧩</div>
+          <h3>App sandboxing</h3>
           <p>
-            GrapheneOS includes privacy and security improvements to Android,
-            including stronger app sandboxing and additional controls.
+            Apps run in separate sandboxes that limit what they can access.
+            GrapheneOS strengthens these boundaries and adds exploit-mitigation
+            improvements to help protect the system and your apps.
           </p>
         </article>
 
         <article class="feature-card feature-card-highlight">
-          <div class="feature-icon" aria-hidden="true">✳</div>
-          <h3>Your choice of apps</h3>
+          <div class="feature-illustration" aria-hidden="true">👤📱👤</div>
+          <h3>Separate user profiles</h3>
           <p>
-            Google apps and services are never included by default but can be installed through the GrapheneOS App Store if needed.
+            Create separate spaces for different activities, each with its own
+            apps and data. Profiles are isolated from one another, and you can
+            end a session to stop its apps from running until you sign in again.
           </p>
         </article>
 
         <article class="feature-card">
-          <div class="feature-icon" aria-hidden="true">⌁</div>
-          <h3>Android app compatibility</h3>
+          <div class="feature-illustration" aria-hidden="true">🔐</div>
+          <h3>Built-in duress PIN</h3>
           <p>
-            This isn't some alien phone that cuts you off from the world. 90% of Android apps work without Google Play Services and can be installed through Aurora Store (pre-installed) and those that don't work can be used from the offical Google Play Store.
-            </p>
+            GrapheneOS lets you configure a duress PIN and password. Entering
+            the configured credential triggers an irreversible wipe of the
+            device, including installed eSIMs. Set up this feature carefully.
+          </p>
         </article>
 
         <article class="feature-card">
-          <div class="feature-icon" aria-hidden="true">◇</div>
-          <h3>Your phone, your setup</h3>
+          <div class="feature-illustration" aria-hidden="true">📱✅</div>
+          <h3>More control over permissions</h3>
           <p>
-            Set up your device with the apps and preferences that work for you. No more useless bloatware, just the apps you want. Plus enjoy a few essential apps installed to get you started.
+            Review and manage what apps can access. GrapheneOS adds controls
+            such as network and sensor permissions, helping you limit access
+            when an app doesn’t need it.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-illustration" aria-hidden="true">🌐🛡️</div>
+          <h3>Hardened web browsing</h3>
+          <p>
+            GrapheneOS includes Vanadium, a hardened Chromium-based browser and
+            WebView designed to provide additional security protections while
+            supporting everyday browsing.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-illustration" aria-hidden="true">📲✨</div>
+          <h3>Your choice of apps</h3>
+          <p>
+            Google apps and services aren’t included by default. If you need
+            them, Google Play can be installed as regular sandboxed apps,
+            without special operating-system privileges.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-illustration" aria-hidden="true">📱🔎</div>
+          <h3>Check app compatibility</h3>
+          <p>
+            App behavior varies, especially for apps that depend on Google Play
+            Services. Browse our compatibility guide to see what’s known to
+            work and what may need an alternative.
+          </p>
+          <a
+            class="card-link"
+            href="https://devdude437.github.io/App-Compatibility-without-Google-Play-Services"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View the app compatibility guide <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-illustration" aria-hidden="true">⚙️📱</div>
+          <h3>A setup that’s yours</h3>
+          <p>
+            Choose the apps and settings that fit your needs. Your phone should
+            be configured around how you use it—not filled with apps you never
+            wanted.
           </p>
         </article>
       </div>
@@ -85,7 +143,10 @@
         <p class="eyebrow">The operating system</p>
         <h2 id="graphene-heading">Meet GrapheneOS</h2>
         <p>
-          GrapheneOS is an open source Android OS prioritizing privacy and security. Unbound Devices is based on GrapheneOS, but not affiliated with them.
+          GrapheneOS is an open-source mobile operating system based on Android,
+          with a focus on privacy and security. Unbound Devices phones use
+          GrapheneOS; Unbound Devices is not affiliated with the GrapheneOS
+          project.
         </p>
         <a
           class="card-link"
