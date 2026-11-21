@@ -2161,3 +2161,66 @@ h1 span,
   line-height: 1.2;
   letter-spacing: 0.15rem;
 }
+
+.review-form {
+  max-width: 620px;
+  margin-top: 2rem;
+}
+
+.review-form .form-field {
+  margin-bottom: 1.5rem;
+}
+
+.review-form label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.review-form input,
+.review-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background: #fff;
+  color: #172033;
+  font: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-form textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.review-form input::placeholder,
+.review-form textarea::placeholder {
+  color: #7b8494;
+}
+
+.review-form input:focus,
+.review-form textarea:focus {
+  outline: none;
+  border-color: #426bff;
+  box-shadow: 0 0 0 4px rgba(66, 107, 255, 0.15);
+}
+
+.review-form small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #667085;
+  font-size: 0.875rem;
+}
+
+.review-form button {
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .review-form input,
+  .review-form textarea {
+    padding: 0.8rem;
+  }
+}
