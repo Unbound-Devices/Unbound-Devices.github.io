@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Submit a review for Unbound Devices.">
+  <title>Reviews — Unbound Devices</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="UnboundOS home">
+      <img class="brand-logo" src="logo.jpeg" alt="">
+      <span>Unbound Devices</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="features.html">Features</a>
+      <a href="about.html">About</a>
+      <a href="get-started.html">Get Started</a>
+      <a href="support.html">Contact Support</a>
+      <a href="faq.html">FAQ</a>
+      <a href="team.html">Meet the Team</a>
+      <a href="reviews.html" aria-current="page">Customer Reviews</a>
+      <a class="nav-cta" href="devices.html">Explore Devices</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-hero">
+      <p class="eyebrow"><span class="status-dot"></span> Unbound Devices Reviews</p>
+      <h1>Share your<br><span>experience.</span></h1>
+      <p>Enjoying your Unbound Device? Make our day and leave a review!</p>
+    </section>
+
+    <section class="about-story">
+      <div class="about-story-heading">
+        <p class="eyebrow">Submit a review</p>
+        <h2>Tell us what you think.</h2>
+      </div>
+
+      <div class="about-story-copy">
+        <form id="review-form" class="review-form">
+  <div class="form-field">
+    <label for="review-name">Your name</label>
+    <input
+      id="review-name"
+      name="name"
+      type="text"
+      maxlength="60"
+      placeholder="How should we identify you?"
+      autocomplete="name"
+      required>
+  </div>
+
+  <div class="form-field">
+    <label for="review-message">Your review</label>
+    <textarea
+      id="review-message"
+      name="message"
+      rows="7"
+      maxlength="1000"
+      placeholder="Tell us about your experience with Unbound Devices..."
+      required></textarea>
+    <small>Please keep your review under 1,000 characters.</small>
+  </div>
+
+  <button class="button button-primary" type="submit">
+    Email your review <span aria-hidden="true">→</span>
+  </button>
+</form>
+        <p>Your email app will open with your review ready to send. It won’t be sent until you press Send.</p>
+      </div>
+    </section>
+
+    <section class="about-values" aria-labelledby="reviews-heading">
+  <div class="about-story-heading">
+    <p class="eyebrow">Customer feedback</p>
+    <h2 id="reviews-heading">Reviews</h2>
+  </div>
+
+  <article class="about-value-card">
+    <h3>Leave a review</h3>
+    <p>Unjoying Unbound Devices? Be the first to leave a review!</p>
+  </article>
+</section>
+
+    <section class="about-cta">
+      <p class="eyebrow">Explore Unbound Devices</p>
+      <h2>See if it’s right for you.</h2>
+      <p>Explore the phone experience and available devices.</p>
+      <a class="button button-primary" href="devices.html">
+        Explore devices <span aria-hidden="true">→</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html">
+      <span>Unbound Devices</span>
+    </a>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="features.html">Features</a>
+      <a href="support.html">Support</a>
+    </nav>
+
+    <p class="copyright">© 2026 Unbound Devices</p>
+  </footer>
+
+  <script>
+    document.getElementById("review-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById("review-name").value.trim();
+      const message = document.getElementById("review-message").value.trim();
+
+      const subject = encodeURIComponent("Unbound Devices review");
+      const body = encodeURIComponent(`Name: ${name}\n\nReview:\n${message}`);
+
+      window.location.href =
+        `mailto:unbounddevices.ca?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+</html>
